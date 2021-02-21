@@ -1,0 +1,31 @@
+server:
+  port: 80
+
+#是否激活 swagger true or false
+swagger:
+  enable: true
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    username: dev_db
+    password: dev_db
+    url: jdbc:oracle:thin:@192.168.116.120:1521:helowin
+    type: com.alibaba.druid.pool.DruidDataSource
+    max-active: 100
+    initial-size: 30
+    min-idle: 20
+    max-wait: 60000
+    time-between-eviction-runs-millis: 60000
+    min-evictable-idle-time-millis: 300000
+    test-while-idle: true
+    test-on-borrow: false
+    test-on-return: false
+    poolPreparedStatements: true
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+is_logic:
+  false

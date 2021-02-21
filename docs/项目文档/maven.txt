@@ -1,0 +1,2 @@
+1，加载ojdbc6.jar
+mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc6 -Dversion=11.2.0.1.0 -Dpackaging=jar -Dfile=E:\myself\project\oracle-rest\docs\资源包\ojdbc6.jar
